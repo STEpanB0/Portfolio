@@ -1,4 +1,56 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
+    /* font-size: 18px; */
+}
+body{
+    background-color: #222831;
+    position: relative;
+}
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+p,h1,h2,button,a,div{
+    font-family: 'Poppins-Regular';
+    color: #EEEEEE;
+}
+span{
+    color: #00ADB5;
+}
+h1{
+    font-family: 'Poppins-Bold';
+    font-size: 96px;
+}
+h2{
+    font-family: 'Poppins-Bold';
+    font-size: 64px;
+}
+button{
+    background-color: rgba(57, 62, 70, .75);
+    border-radius: 25px;
+    padding: 10px 30px 10px 30px;
+    border: none; /* Убираем рамку */ /* Отступы */
+    cursor: pointer; /* Курсор при наведении */
+    font-family: 'Poppins-Bold';
+    transition: .2s;
+    display: flex;
+    
+}
+button p{
+    font-family: 'Poppins-Bold';
+}
+button:active {
+    background-color: rgba(49, 54, 61, 0.75); /* Цвет фона при нажатии */
+    transform: translateY(2px); /* Эффект "утопления" */
 }

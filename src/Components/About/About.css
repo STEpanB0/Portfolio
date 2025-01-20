@@ -1,0 +1,23 @@
+.About {
+    background-color: azure;
+    height: 890px;
+}
+.wrapperOfAbout {
+    margin-top: 256px;
+    position: relative;
+}
+.Music {
+    position: absolute;
+    top: 135px;
+    left: 96px;
+}
+.Bulb {
+    position: absolute;
+    top: 247px;
+    left: 444px;
+}
+.UpSpiral {
+    position: absolute;
+    top: 606px;
+    left: 257px;
+}

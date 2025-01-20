@@ -1,16 +1,17 @@
 import  React , {FC}  from "react";
 import "./Header.css";
-import logo from "./www.png";
+import  Line  from "../../Components/Line/Line";
  const Header:FC = () => {
     return (
         <header className="header">
             <div className="container">
+                <Line></Line>
                 <div className="wrapperHeader">
-                    <img src="logo" alt="" className="logo" />
+                    <h2 className="logo">Crafted Creations</h2>
                     <nav className="navigation">
-                        <div className="Home">Home</div>
-                        <div className="About Me">About Me</div>
-                        <div className="Contact">Contact</div>
+                        <p className="Home">Home</p>
+                        <p className="AboutMe">About Me</p>
+                        <p className="Contact">Contact</p>
                     </nav>
                 </div>
             </div>
