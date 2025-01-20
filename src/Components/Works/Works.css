@@ -3,12 +3,8 @@
     margin-top: 135px;
     height: 1024px;
 }
-.container {
-}
 .wrapperOfWorks {
     padding-top: 280px;
-}
-.titleOfWorks {
 }
 .wrapperOfButtons {
     display: flex;
@@ -34,6 +30,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+.slide:hover{
+    transform: scale(1.2);
+}
+.slide:active{
+    transform: translateY(-1px);
 }
 .slideImg {
 }

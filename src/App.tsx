@@ -4,6 +4,7 @@ import  Header  from "./Components/Header/Header";
 import  Main  from "./Components/Main/Main";
 import  About  from "./Components/About/About";
 import  Works  from "./Components/Works/Works";
+import  FormSection  from "./Components/FormSection/FormSection";
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <Main></Main>
       <About></About>
       <Works></Works>
+      <FormSection></FormSection>
     </div>
   );
 }
