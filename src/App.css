@@ -24,6 +24,7 @@ body{
 p,h1,h2,button,a,div{
     font-family: 'Poppins-Regular';
     color: #EEEEEE;
+    font-size: 18px;
 }
 span{
     color: #00ADB5;

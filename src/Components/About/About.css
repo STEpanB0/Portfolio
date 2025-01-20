@@ -1,23 +1,64 @@
 .About {
-    background-color: azure;
     height: 890px;
+    border-bottom: 1px solid rgba(238, 238, 238, .1);
 }
 .wrapperOfAbout {
-    margin-top: 256px;
     position: relative;
+}
+.aboutInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 250px;
+}
+.aboutinfoMainBlock {
+    height: 500px;
+}
+.textAbout {
+    color: rgba(255, 255, 255, 0.60);
+    max-width: 390px;
+    margin-top: 10px;
+}
+.readmore{
+    font-family: 'Poppins-Bold';
+    color: #EEEEEE;
 }
 .Music {
     position: absolute;
     top: 135px;
-    left: 96px;
 }
 .Bulb {
     position: absolute;
-    top: 247px;
-    left: 444px;
+    top: 227px;
+    left: 354px;
 }
 .UpSpiral {
     position: absolute;
     top: 606px;
-    left: 257px;
+    left: 160px;
+}
+.aboutImg {
+    width: 665px;
+    height: 590px;
+    position: relative;
+}
+.DoodlesItems {
+    position: absolute;
+}
+.Ellipse2 {
+    position: absolute;
+    top: 578px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Person2 {
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.Sleeping {
+    top: 215px;
+    left: 210px;
+    position: absolute;
 }
