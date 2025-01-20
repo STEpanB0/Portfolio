@@ -1,4 +1,5 @@
 import './About.css';
+import React , {FC}from 'react';
 import Ellipse from '../../assets/images/Ellipse.png';
 import Person2 from '../../assets/images/Person2.png';
 import DoodlesItems from '../../assets/images/DoodleItems.png';
@@ -6,7 +7,7 @@ import Sleeping from '../../assets/images/Sleeping.png';
 import UpSpiral from '../../assets/images/UpSpiral.png';
 import Music from '../../assets/images/Music.png';
 import Bulb from '../../assets/images/Bulb.png';
-function About() {
+const About:FC =()=> {
   return (
     <section className="About">
         <div className="container">

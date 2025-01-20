@@ -18,8 +18,7 @@
 }
 .navigation {
     display: flex;
-    min-width: 310px;
-    justify-content: space-between;
+    align-items: center;
 }
 .Home {
 }
@@ -29,10 +28,10 @@
 }
 .Home, .AboutMe, .Contact {
     cursor: pointer;
-    /* Ваши стили здесь */
-    color: white; /* Пример: устанавливаем синий цвет текста */
-    font-size: 18px; /* Пример: устанавливаем размер шрифта */
+    color: white;
+    font-size: 18px;
     transition: .2s;
+    margin-right: 48px;
 }
 .Home:hover{
     color: #c4c4c4;
@@ -42,4 +41,21 @@
 }
 .Contact:hover{
     color: #c4c4c4;
+}
+.language{
+    font-family: 'Poppins-Bold';
+    background: linear-gradient(-45deg, #1737eb, #67f591 ,#ffb374, #e560dcef, #ff3300ef, #ef5f5f , #d840b6 , #ff0000 , #1e58af , #f1ff2b); /* Начальный градиент */
+    background-size: 400% 400%; /* Увеличиваем размер фона для анимации */
+    animation: gradient-animation 12s ease infinite
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%; /* Начальная позиция */
+    }
+    50% {
+        background-position: 100% 100%; /* Позиция в середине анимации */
+    }
+    100% {
+        background-position: 0% 50%; /* Возвращаемся к началу */
+    }
 }

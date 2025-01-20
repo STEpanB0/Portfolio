@@ -12,6 +12,7 @@ import  Line  from "../../Components/Line/Line";
                         <p className="Home">Home</p>
                         <p className="AboutMe">About Me</p>
                         <p className="Contact">Contact</p>
+                        <button className="language">Language</button>
                     </nav>
                 </div>
             </div>

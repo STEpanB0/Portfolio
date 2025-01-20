@@ -1,0 +1,39 @@
+.Works {
+    background-image: url(../../assets/images/DoodleItems2.png);
+    margin-top: 135px;
+    height: 1024px;
+}
+.container {
+}
+.wrapperOfWorks {
+    padding-top: 280px;
+}
+.titleOfWorks {
+}
+.wrapperOfButtons {
+    display: flex;
+    margin-top: 25px;
+}
+.worksButton {
+    margin-right: 16px;
+}
+.worksButton:last-child {
+    margin-right: 0px;
+}
+.sectionOfPresentation {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.slide {
+    height: 280px;
+    width: 368px;
+    background-color: rgba(57, 62, 70, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+.slideImg {
+}
