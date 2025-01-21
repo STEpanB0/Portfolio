@@ -12,9 +12,9 @@ const About:FC =()=> {
     <section className="About">
         <div className="container">
             <div className="wrapperOfAbout">
-                <img src={Music} alt="" className="Music" />
-                <img src={Bulb} alt="" className="Bulb" />
-                <img src={UpSpiral} alt="" className="UpSpiral" />
+                <img src={Music} alt="" className="Music" draggable="false" />
+                <img src={Bulb} alt="" className="Bulb" draggable="false" />
+                <img src={UpSpiral} alt="" className="UpSpiral"draggable="false"  />
                 <div className="aboutInfo">
                     <div className="aboutinfoMainBlock">
                         <h2 className="titleAbout">About <span>me</span></h2>

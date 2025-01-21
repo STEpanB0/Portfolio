@@ -11,7 +11,7 @@ import Download from '../../assets/images/Download.png';
         <main className="main">
             <div className="container">
                 <div className="mainInfo">
-                    <img className="spiral" src={Spiral} alt="" />
+                    <img className="spiral" src={Spiral} alt="" draggable="false" />
                     <div className="maininfoblock">
                         <h1 className="mainTitle">Frontend <span>Developer</span></h1>
                         <div className="buttonWrapper">
@@ -20,7 +20,7 @@ import Download from '../../assets/images/Download.png';
                             </button>
                             <button className="mainbutton buttonDownload">
                                 <p className="textOfButtonDownload">Download CV</p>
-                                <img src={Download} alt="" className="imgofButtonDownload" />
+                                <img src={Download} alt="" className="imgofButtonDownload" draggable="false" />
                             </button>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ import Download from '../../assets/images/Download.png';
                         <img src={Person} className="Person" alt="" />
                     </div>
                     <button className="slideDown">
-                        <img src={Arrow} alt="" className="arrowOfButtonSlideDown" />
+                        <img src={Arrow} alt="" className="arrowOfButtonSlideDown"draggable="false" />
                     </button>
                     
                 </div>

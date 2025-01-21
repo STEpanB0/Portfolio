@@ -67,11 +67,12 @@
     left: -30px;
 }
 .slideDown{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 565px;
+    top: 565px;/
     left: 320px;
     border-radius:0 ;
     width: 96px;

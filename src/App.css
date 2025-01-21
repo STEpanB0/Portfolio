@@ -46,7 +46,7 @@ button{
     font-family: 'Poppins-Bold';
     transition: .2s;
     display: flex;
-    
+    text-shadow: 2px 2px 4px #1a1a1a;
 }
 button p{
     font-family: 'Poppins-Bold';
@@ -54,4 +54,45 @@ button p{
 button:active {
     background-color: rgba(49, 54, 61, 0.75); /* Цвет фона при нажатии */
     transform: translateY(2px); /* Эффект "утопления" */
+}
+label{
+    font-family: 'Poppins-Bold';
+    margin-bottom: 10px;
+}
+input{
+    height: 60px;
+    width: 288px;
+    border-radius:16px;
+    background-color: rgba(57, 62, 70, .5);
+    border: 0px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0px 24px 0 24px;
+    font-family: 'Poppins-Bold';
+    font-size: 18px;
+    color:#FFFFFF ;
+    transition: .8s ease;
+}
+input:focus{
+    border:2px solid rgba(12, 12, 12, 0.5);
+    outline: none;
+}
+textarea{
+    border-radius:16px;
+    background-color: rgba(57, 62, 70, .5);
+    border: 0px;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 16px 24px 0 24px;
+    font-family: 'Poppins-Bold';
+    font-size: 18px;
+    color:#FFFFFF ;
+    transition: .8s ease;
+    resize: none;
+}
+img{
+    -webkit-user-select: none;
+    -moz-user-select: none;  
+    -ms-user-select: none;     
+    user-select: none; 
 }

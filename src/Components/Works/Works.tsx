@@ -15,13 +15,13 @@ import "./Works.css";
                     </div>
                     <div className="sectionOfPresentation">
                         <div className="slide">
-                            <img src={Landing} alt="" className="slideImg"/>
+                            <img src={Landing} alt="" className="slideImg" draggable="false" />
                         </div>
                         <div className="slide">
-                            <img src={Landing} alt="" className="slideImg"/>
+                            <img src={Landing} alt="" className="slideImg" draggable="false" />
                         </div>
                         <div className="slide">
-                            <img src={Landing} alt="" className="slideImg"/>
+                            <img src={Landing} alt="" className="slideImg" draggable="false" />
                         </div>
                     </div>
                 </div>

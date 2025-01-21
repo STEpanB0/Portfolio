@@ -11,6 +11,7 @@
     margin-top: 25px;
 }
 .worksButton {
+    font-family: 'Poppins-Bold';
     margin-right: 16px;
 }
 .worksButton:last-child {
