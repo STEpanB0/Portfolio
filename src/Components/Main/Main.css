@@ -71,13 +71,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 565px;/
-    left: 320px;
+    /* position: absolute;
+    top: 565px; */
+    /* top: 855px;
+     */
+     top: calc(100vh - 110px);
+
+    left: calc(100vw/2 - 267px) ;
+    transform: translateX(-50%);
+    /* left: 643px; */
     border-radius:0 ;
     width: 96px;
     height: 96px;
+    z-index: 1;
+}
+.slideDown:active{
+    transform: translate(-50%,2px);
 }
 .arrowOfButtonSlideDown{
 
+}
+.transform{
+    transform: rotate(180deg);
 }
