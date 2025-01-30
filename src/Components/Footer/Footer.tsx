@@ -6,6 +6,7 @@ import Phone from '../../assets/images/Phone.png';
 import VK from '../../assets/images/VK.png';
 import Telegram from '../../assets/images/Telegram.png';
 import Whatsapp from '../../assets/images/Whatsapp.png';
+import languageStore from "../../Store/LanguageStore";
  const Footer:FC = () => {
     return (
         <footer className="footer">
@@ -14,15 +15,15 @@ import Whatsapp from '../../assets/images/Whatsapp.png';
                     <nav className="navigationFromFooter">
                         <div className="itemNavigation">
                             <img src={Home} alt="" className="imgFooterNavigation" draggable="false" />
-                            <p className="textOfItemNavigation">Home</p>
+                            <p className="textOfItemNavigation">{languageStore.isEnglish? (languageStore.englishLanguage.Home):(languageStore.russianLanguage.Home)}</p>
                         </div>
                         <div className="itemNavigation">
                             <img src={User} alt="" className="imgFooterNavigation"draggable="false"/>
-                            <p className="textOfItemNavigation">About me</p>
+                            <p className="textOfItemNavigation">{languageStore.isEnglish? (languageStore.englishLanguage.AboutMe):(languageStore.russianLanguage.AboutMe)}</p>
                         </div>
                         <div className="itemNavigation">
                             <img src={Phone} alt="" className="imgFooterNavigation"draggable="false" />
-                            <p className="textOfItemNavigation">Contact</p>
+                            <p className="textOfItemNavigation">{languageStore.isEnglish? (languageStore.englishLanguage.Contact):(languageStore.russianLanguage.Contact)}</p>
                         </div>
                     </nav>
                     <div className="blockOfSocialNetworks">

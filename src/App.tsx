@@ -24,7 +24,7 @@ function App() {
         onScrollToContact={() => scrollStore.scrollToTarget('contact')}
       />
       <div ref={homeRef}>
-        <Main />
+        <Main onScrollToContact={()=>scrollStore.scrollToTarget('contact')} />
       </div>
       <div ref={aboutRef}>
         <About />

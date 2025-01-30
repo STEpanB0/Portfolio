@@ -7,6 +7,7 @@ import Sleeping from '../../assets/images/Sleeping.png';
 import UpSpiral from '../../assets/images/UpSpiral.png';
 import Music from '../../assets/images/Music.png';
 import Bulb from '../../assets/images/Bulb.png';
+import languageStore from "../../Store/LanguageStore";
 const About:FC =()=> {
   return (
     <section className="About">
@@ -17,8 +18,11 @@ const About:FC =()=> {
                 <img src={UpSpiral} alt="" className="UpSpiral"draggable="false"  />
                 <div className="aboutInfo">
                     <div className="aboutinfoMainBlock">
-                        <h2 className="titleAbout">About <span>me</span></h2>
-                        <p className="textAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis.... <span className='readmore'>Read more</span></p>
+                        <h2 className="titleAbout">{languageStore.isEnglish? (languageStore.englishLanguage.About):(languageStore.russianLanguage.About)}
+                             <span>{languageStore.isEnglish? (languageStore.englishLanguage.me):(languageStore.russianLanguage.me)} </span></h2>
+                        <p className="textAbout">
+                        {languageStore.isEnglish? (languageStore.englishLanguage.textAbout):(languageStore.russianLanguage.textAbout)}
+                        <span className='readmore'>....{languageStore.isEnglish? (languageStore.englishLanguage.readmore):(languageStore.russianLanguage.readmore)}</span></p>
                     </div>
                     <div className="aboutImg">
                         <img src={DoodlesItems} alt="" className="DoodlesItems" />

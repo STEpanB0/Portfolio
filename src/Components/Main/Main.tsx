@@ -6,7 +6,11 @@ import Person from '../../assets/images/Person.png';
 import Ellipse from '../../assets/images/Ellipse.png';
 import Arrow from '../../assets/images/Arrow.png';
 import Download from '../../assets/images/Download.png';
- const Main:FC = () => {
+import languageStore from "../../Store/LanguageStore";
+interface MainProps {
+    onScrollToContact: () => void; // Определяем тип пропса
+}
+ const Main:React.FC<MainProps> = ({onScrollToContact}) => {
     const [canScrollDown, setCanScrollDown] = useState<boolean>(true)
     const checkScrollPosition = () => {
         // Получаем высоту страницы и высоту окна
@@ -24,7 +28,7 @@ import Download from '../../assets/images/Download.png';
             window.removeEventListener('scroll', checkScrollPosition);
         };
     });
-    const handleScroll = () => {
+    const handleScrollFixedButton = () => {
         if (canScrollDown) {
             window.scrollBy({
                 top: 1000, // количество пикселей для прокрутки вниз
@@ -47,13 +51,14 @@ import Download from '../../assets/images/Download.png';
                 <div className="mainInfo">
                     <img className="spiral" src={Spiral} alt="" draggable="false" />
                     <div className="maininfoblock">
-                        <h1 className="mainTitle">Frontend <span>Developer</span></h1>
+                        <h1 className="mainTitle">{languageStore.isEnglish? (languageStore.englishLanguage.Frontend):(languageStore.russianLanguage.Frontend)} 
+                            <span>{languageStore.isEnglish? (languageStore.englishLanguage.Developer):(languageStore.russianLanguage.Developer)}</span></h1>
                         <div className="buttonWrapper">
-                            <button className="mainbutton buttonHire">
-                                <p className="textOfButtonHireMe">Hire Me</p>
+                            <button onClick={onScrollToContact} className="mainbutton buttonHire">
+                                <p className="textOfButtonHireMe">{languageStore.isEnglish? (languageStore.englishLanguage.HireMe):(languageStore.russianLanguage.HireMe)}</p>
                             </button>
                             <button className="mainbutton buttonDownload">
-                                <p className="textOfButtonDownload">Download CV</p>
+                                <p className="textOfButtonDownload">{languageStore.isEnglish? (languageStore.englishLanguage.DownloadCV):(languageStore.russianLanguage.DownloadCV)}</p>
                                 <img src={Download} alt="" className="imgofButtonDownload" draggable="false" />
                             </button>
                         </div>
@@ -63,7 +68,7 @@ import Download from '../../assets/images/Download.png';
                         <img src={Ellipse} className="Ellipse" alt="" />
                         <img src={Person} className="Person" alt="" />
                     </div>
-                    <button onClick={handleScroll} className="slideDown">
+                    <button onClick={handleScrollFixedButton} className="slideDown">
                         {
                             canScrollDown?(
                                 <img src={Arrow} alt="" className="arrowOfButtonSlideDown"draggable="false" />

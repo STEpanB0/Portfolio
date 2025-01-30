@@ -13,8 +13,6 @@
     right: 15px;
     height: 280px;
 }
-.maininfoblock {
-}
 .mainbutton{
     display: flex;
     align-items: center;
@@ -87,9 +85,6 @@
 }
 .slideDown:active{
     transform: translate(-50%,2px);
-}
-.arrowOfButtonSlideDown{
-
 }
 .transform{
     transform: rotate(180deg);
