@@ -35,6 +35,31 @@
 .Contact:hover{
     color: #c4c4c4;
 }
+.wrapperOfButtonAndPopUp {
+    position: relative;
+}
+.popUpWithChangeLanguage {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+    height: 130px; 
+    background-color: #3c4655;
+    border-radius: 16px;
+}
+.englishLanguage {
+    font-family: 'Poppins-Bold';
+    transition: .2s;
+}
+.russianLanguage {
+    font-family: 'Poppins-Bold';
+    transition: .2s;
+}
+.activeLanguage{
+    border:1px solid white ;
+}
 .language{
     font-family: 'Poppins-Bold';
     background: linear-gradient(-45deg, #1737eb, #67f591 ,#ffb374, #e560dcef, #ff3300ef, #ef5f5f , #d840b6 , #ff0000 , #1e58af , #f1ff2b); /* Начальный градиент */

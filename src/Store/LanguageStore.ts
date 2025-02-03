@@ -31,6 +31,9 @@ class LanguageStore {
             labelOfTeaxtarea: 'Your Message',
             textarea: 'Message',
             textOfButtonSendMessage: 'Send Message',
+            english: 'English',
+            russian: 'Russian',
+            
         };
         this.russianLanguage = {
             logo: 'Созданные творения',
@@ -57,6 +60,8 @@ class LanguageStore {
             labelOfTeaxtarea: 'Ваше сообщение',
             textarea: 'Сообщение',
             textOfButtonSendMessage: 'Отправить',
+            english: 'Английский',
+            russian: 'Русский',
         };
         this.isEnglish = true;
 

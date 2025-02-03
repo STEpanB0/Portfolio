@@ -33,7 +33,11 @@ function App() {
       <div ref={contactRef}>
         <FormSection/>
       </div>
-      <Footer></Footer>
+      <Footer
+        onScrollToHome={() => scrollStore.scrollToTarget('home')}
+        onScrollToAbout={() => scrollStore.scrollToTarget('about')}
+        onScrollToContact={() => scrollStore.scrollToTarget('contact')}
+      />
     </div>
   );
 }
